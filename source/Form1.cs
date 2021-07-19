@@ -34,6 +34,12 @@ namespace source
                      new float[] {.2f, .2f, .2f, 0, 1}
         };
             ColorMatrix colorMatrix = new ColorMatrix(colorMatrixElements);
+
+            imageAttributes.SetColorMatrix(
+                colorMatrix,
+                ColorMatrixFlag.Default,
+                ColorAdjustType.Bitmap
+                );
         }
     }
 }
